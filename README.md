@@ -1,7 +1,7 @@
 # Setup the project
  Open a terminal (if you're using Visual Studio Code, you can open an integrated terminal) and use the following command to create a new starter project:
 
-|   |command
+|   |command |
 | ------------ |
 |  npx | `npx nuxi@latest init <project-name>`|
 | pnpm  |`pnpm dlx nuxi@latest init <project-name>`|
@@ -10,7 +10,7 @@
 ## Development Server
 Now you'll be able to start your Nuxt app in development mode:
 
-|   |command
+|   |command|
 | ------------ |
 |yarn |  yarn dev --open |
 |npm|  npm run dev -- -o |
