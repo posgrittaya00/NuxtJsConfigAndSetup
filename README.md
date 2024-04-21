@@ -39,15 +39,6 @@ pnpm dev -o
 bun run dev -o
 ```
 
-> nuxt.config2. If not already done, add it to your modules section in your nuxt.config:
-```ts
-export default defineNuxtConfig({
-  modules: ['@nuxtjs/tailwindcss']
-})
-
-```
-
-
 ## Tailwind
   Install @nuxtjs/tailwindcss dependency to your project:
 |   |  command |
