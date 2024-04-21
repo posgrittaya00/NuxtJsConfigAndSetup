@@ -60,17 +60,17 @@ export default defineNuxtConfig({
 **- Download**
 > PrimeVue is available for download on npm registry. For this setup, we'll also use the primevue-nuxt module.
 
-### npm
+#### npm
 ```ts
 npm install primevue
 npm install --save-dev nuxt-primevue
 ```
-### yarn
+#### yarn
 ```ts
 yarn add primevue
 yarn add --dev nuxt-primevue
 ```
-### pnpm
+#### pnpm
 ```ts
 pnpm add primevue
 pnpm add -D nuxt-primevue
@@ -88,6 +88,46 @@ export default defineNuxtConfig({
         options: {
           unstyled: true
         },
+    }
+})
+
+```
+
+**- Preset**
+> Download a release from github, alternatively you may use Preset Builder to dynamically build your release file with the components you need as the pre-build release package contains all the available components. Once the zip is downloaded, extract the contents to a folder of your choice e.g. ./presets and then in your nuxt-config file, configure the importPT property of PrimeVue to the main preset file.
+
+#### Solution 1
+
+```ts
+import path from 'path';
+
+export default defineNuxtConfig({
+    modules: [
+        'nuxt-primevue'
+    ],
+    primevue: {
+        options: {
+          unstyled: true
+        },
+        importPT: { from: path.resolve(__dirname, './presets/lara/') }      //import and apply preset   
+    }
+})
+
+```
+#### Solution 2
+
+```ts
+import path from 'path';
+
+export default defineNuxtConfig({
+    modules: [
+        'nuxt-primevue'
+    ],
+    primevue: {
+        options: {
+          unstyled: true
+        },
+        importPT: { from: `${__dirname}/presets/lara/` }      //import and apply preset   
     }
 })
 
