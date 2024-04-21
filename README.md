@@ -2,7 +2,7 @@
 ## Create Project
 
 Open a terminal (if you’re using Visual Studio Code, you can open an integrated terminal) and use the following command to create a new starter project:
-> git repository --> N 
+> git repository --> No
 
 - **npx**	
 
